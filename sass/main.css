@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'open sans',sans-serif,Helvetica;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: [navbar-s] 56px [navbar-e image-e] 400px [image-end];
+      grid-template-rows: [navbar-s] 56px [navbar-e image-e] 400px [image-end];
+  -ms-grid-columns: [s] 1fr [e];
+      grid-template-columns: [s] 1fr [e];
+}
+
+.layout__navbar {
+  grid-row: navbar-s/navbar-e;
+  grid-column: s/e;
+}
+
+.layout__image-container {
+  grid-row: image-s/ image-e;
+  grid-column: s/e;
+}
+
+body {
+  background: #10171E;
+}
+
+.navbar {
+  background: #1c2938;
+  color: #96a7b5;
+}
+
+.navbar_logo {
+  color: #1DA1F2;
+}
+
+.navbar_tweet {
+  background: #1DA1F2;
+  color: white;
+}
+
+.navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+      grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar_actions {
+  grid-column: actions-s/actions-e;
+}
+
+.navbar_logo {
+  grid-column: logo-s/logo-e;
+  color: rgba(74, 147, 231, 0.822);
+  font-size: 20px;
+}
+
+.navbar_search {
+  grid-column: search-s/search-e;
+}
+
+.navbar_profile {
+  grid-column: profile-s/profile-e;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 32px;
+  width: 32px;
+}
+
+.navbar_tweet {
+  grid-column: tweet-s/tweet-e;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */

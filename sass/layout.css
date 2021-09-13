@@ -1,0 +1,26 @@
+.layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: [navbar-s] 56px [navbar-e image-e] 400px [image-end];
+      grid-template-rows: [navbar-s] 56px [navbar-e image-e] 400px [image-end];
+  -ms-grid-columns: [s] 1fr [e];
+      grid-template-columns: [s] 1fr [e];
+}
+
+.layout__navbar {
+  grid-row: navbar-s/navbar-e;
+  grid-column: s/e;
+}
+
+.layout__image-container {
+  grid-row: image-s/ image-e;
+  grid-column: s/e;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=layout.css.map */

@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: inherit;
 }
+
+
 body{
     font-family: 'open sans',sans-serif,Helvetica ;
     font-weight: normal;
@@ -13,6 +15,17 @@ body{
     -moz-osx-font-smoothing:grayscale ;
     text-rendering: optimizeLegibility;
 
-    background:$color-bg;
-  
+   
 }
+
+.actions{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+  
+  }
+  .action{
+    display: flex;
+    flex-direction: row;
+  }
+ 

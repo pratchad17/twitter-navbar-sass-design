@@ -6,4 +6,52 @@
 
 
 
+.actions{
+    // display: flex;
+    // justify-content: space-around;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+    width: 400px;
+  
+  
+  .action{
+    // margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: center;
 
+    &_icon{
+        margin: 0px 4px;
+    }
+
+  }
+}
+.search{
+    // margin:30px;
+    display: grid;
+    input,
+    i{
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+
+    }
+    input{
+        padding: 4px;
+        height: 30px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        
+
+    }
+    i{
+        padding: 4px;
+        padding-right: 6px;
+        justify-self: end;
+        line-height: 1.3;
+
+    }
+}

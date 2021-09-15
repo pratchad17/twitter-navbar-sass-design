@@ -72,6 +72,13 @@ body {
 .navbar_tweet {
   background: #1DA1F2;
   color: white;
+  font-weight: 600;
+  background: #1C88CC;
+  border: none;
+  height: 32px;
+  width: 43px;
+  border-radius: 100px;
+  padding: 5px 16px;
 }
 
 .navbar {
@@ -160,15 +167,34 @@ body {
 }
 
 .search input {
-  padding: 4px;
   height: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
+  background: #1a232F;
+  border: 1px solid #38444d;
+  color: white;
+  padding: 8px 15px 8px 10px;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #96a7b5;
+}
+
+.search input:-ms-input-placeholder {
+  color: #96a7b5;
+}
+
+.search input::-ms-input-placeholder {
+  color: #96a7b5;
+}
+
+.search input::placeholder {
+  color: #96a7b5;
 }
 
 .search i {
-  padding: 4px;
+  padding: 3px;
   padding-right: 6px;
   -ms-grid-column-align: end;
       justify-self: end;

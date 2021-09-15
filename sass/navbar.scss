@@ -1,3 +1,24 @@
+@mixin remove-default-button-styles(){
+    border: none;
+}
+
+@mixin blue-button(){
+    font-weight:bold;
+    background: $color-primary-darker;
+    @include remove-default-button-styles();
+    height: 32px;
+    width: 43px;
+    border-radius: 100px;
+    padding: 5px 16px;
+    padding-bottom: 6px;
+    border: 1px solid transparent;
+    // box-shadow: none;
+    box-sizing:border-box;
+    width: 74px;
+    font-size: 14px;
+    
+}
+
 .navbar{
     background: $color-secondary;
     color: $color-text;
@@ -5,8 +26,13 @@
         color: $color-primary;
     }
     &_tweet{
+       
         background: $color-primary;
         color: white;
+        @include blue-button();
+
+        
+        
     }
 }
 
@@ -46,7 +72,20 @@
     }
     &_tweet{
         grid-column:tweet-s/tweet-e;
-
+        
     }
     
 }
+// .navbar-tweet{
+//         background: $color-primary;
+//         color: white;
+//         font-weight:600;
+//         background: $color-primary-darker;
+       
+//         height: 32px;
+//         width: 43px;
+//         border-radius: 100px;
+//         padding: 5px 16px;
+//         border: none;
+
+// }

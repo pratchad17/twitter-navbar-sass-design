@@ -2,7 +2,7 @@
 @import "base";
 @import "variable";
 @import "layout";
-@import"navbar";
+@import "navbar";
 
 
 
@@ -40,15 +40,23 @@
 
     }
     input{
-        padding: 4px;
+        // padding: 4px;
         height: 30px;
         box-sizing: border-box;
         border-radius: 15px;
+
+        background:$color-search-bg;
+        border:1px solid $color-search-border;
+        color: white;
+        padding: 8px 15px 8px 10px;
+        &::placeholder{
+            color: $color-text;
+        }
         
 
     }
     i{
-        padding: 4px;
+        padding: 3px;
         padding-right: 6px;
         justify-self: end;
         line-height: 1.3;

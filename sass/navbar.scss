@@ -9,18 +9,18 @@
     height: 32px;
     width: 43px;
     border-radius: 100px;
-    padding: 5px 16px;
+    padding: 5px 5px;
     padding-bottom: 6px;
-    border: 1px solid transparent;
+    border: 0.5px solid transparent;
     // box-shadow: none;
     box-sizing:border-box;
-    width: 74px;
+    width: 70px;
     font-size: 14px;
     
 }
 
 .navbar{
-    background: $color-secondary;
+    // background: $color-secondary;
     color: $color-text;
     &_logo{
         color: $color-primary;
@@ -44,6 +44,7 @@
 
     justify-items: center;
     align-items: center;
+    
 
     &_actions  {
         grid-column:actions-s/actions-e;
